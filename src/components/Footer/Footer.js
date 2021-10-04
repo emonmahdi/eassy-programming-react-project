@@ -8,9 +8,9 @@ const Footer = () => {
         <div className='footer-body text-light'>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-4 text-left">
-                        <div className="logo-footer">
-                            <a class="navbar-brand text-secondary fw-bold "href="/home"> 
+                    <div className="col-md-4 text-start">
+                        <div className="logo-footer mb-3">
+                            <a class="navbar-brand text-warning fw-bold "href="/home"> 
                             {element} Easy-Programming
                             </a>
                         </div>
@@ -37,6 +37,9 @@ const Footer = () => {
                         <button className='btn btn-primary mt-3'>Subcribe</button>
                     </div>
                 </div>
+            </div>
+            <div className="copyright p-2 bg-secondary">
+                <p>Copyright &copy; ALl Right Resered <span className='text-warning'>Eassy-Programming</span> </p>
             </div>
         </div>
     );

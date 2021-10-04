@@ -9,30 +9,33 @@ import Services from './components/Services/Services';
 import About from './components/About/About';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import NotFound from './components/NotFound/NotFound';
+import Contact from './components/Contact/Contact';
+import HomeServices from './components/HomeServices/HomeServices';
 
 function App() {
   return (
     <div className="App">   
-        
-        {/* <About></About> */}
-        
+         
 
         <Router>
           <Header></Header> 
-          <Switch>
-            <Route path='/home'>
-               <Services></Services>
-               <About></About>
-            </Route>
+          <Switch> 
             <Route exact path='/'>
                <Services></Services>
                <About></About>
             </Route>
+            <Route exact path='/home'>
+               <Services></Services>
+               <About></About>
+            </Route>
             <Route path='/services'>
-                <Services></Services>
+                <HomeServices></HomeServices>
             </Route>
             <Route path='/about'>
                 <About></About>
+            </Route>
+            <Route path='/contact'>
+                <Contact></Contact>
             </Route>
             <Route exact path='*'>
                 <NotFound></NotFound>

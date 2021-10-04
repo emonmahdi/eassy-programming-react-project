@@ -3,31 +3,33 @@ import image from './header.jpeg'
 import './Header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
+import { NavLink } from 'react-router-dom';
 const element = <FontAwesomeIcon icon={faLaptopCode} />
 const Header = () => {
     return (
         <div>  
-            <nav class="navbar navbar-expand-lg navbar-light bg-info">
-                <div class="container">
-                    <a class="navbar-brand text-secondary fw-bold
-                    " href="/home"> {element} Easy-Programming</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <nav className="navbar navbar-expand-lg navbar-light bg-info">
+                <div className="container">
+                    <NavLink className="navbar-brand text-success fw-bold
+                    " to="/home"> {element} Easy-Programming</NavLink>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/home">Home</a>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav ms-auto">
+                        
+                        <li className="nav-item">
+                            <NavLink className='nav-link' to='/home'>Home</NavLink>
                         </li>
-                        <li class="nav-item">
-                            <a href="/about" className='nav-link'>About</a>
+                        <li className="nav-item">
+                            <NavLink to='/about' className='nav-link'>About</NavLink>
                         </li>
-                        <li class="nav-item">
-                            <a href="/services" className='nav-link'>Services</a>
+                        <li className="nav-item">
+                            <NavLink to='/services' className='nav-link'>Services</NavLink>
                         </li>
-                        <li class="nav-item">
-                            <a href="/contact" className='nav-link'>Contact</a>
-                        </li>
+                        <li className="nav-item">
+                            <NavLink to='/contact' className='nav-link'>Contact</NavLink>
+                        </li> 
                     </ul>
                     </div>
                 </div>
