@@ -16,6 +16,7 @@ const HomeService = (props) => {
                      <div className="card-body">
                         <h2 className='text-left'>{title}</h2>
                         <p>{description.slice(0, 150)}</p> 
+                        <button className='btn btn-dark'>Enroll Now </button>
                      </div>
                      <div className="card-footer">
                         <div className="price d-flex justify-content-between align-items-center">

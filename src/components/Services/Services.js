@@ -23,7 +23,7 @@ const Services = () => {
                 <h2 className='fw-bold p-2'>Courses </h2>
             </div>
             <div className="container">
-                 <div className="row"> 
+                 <div className="row" > 
                  
                         {
                             services.slice(0, 4).map(service  =>  
