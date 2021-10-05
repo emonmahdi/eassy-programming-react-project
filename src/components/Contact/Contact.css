@@ -1,6 +1,20 @@
 .contact-section{
     padding:60px 0;
 }
+.form-body{
+    box-shadow: 0 4px 13px #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
 textarea{
     height: 200px;
+}
+.address-body{
+    box-shadow: 0 4px 13px #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+.address{
+    margin-bottom: 20px;
+    
 }

@@ -37,8 +37,7 @@ const Header = () => {
             <div className="header-top">
                 <div className="container">
                      <h1 className='text-light'>You Can Learn Best and Easy Way Programming by <span className='text-warning'>Easy-Programming </span> </h1>
-                </div>
-                
+                </div> 
             </div>
         </div>
     );
