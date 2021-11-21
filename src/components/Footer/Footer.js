@@ -30,6 +30,7 @@ const Footer = () => {
                             <a href="/python">Python</a>
                             <a href="/javascript">Javascript</a>
                             <a href="/react">React</a>
+                            <a href="/react">Node Js</a>
                         </div>
                     </div> 
                     <div className="col-md-4">
